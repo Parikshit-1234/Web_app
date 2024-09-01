@@ -1,0 +1,141 @@
+/* Base styles for hero section */
+.hero {
+    height: 100vh;
+    background: linear-gradient(180deg, #fde1ff, #e1ffea22 60%);
+    display: flex;
+}
+
+.hero-left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    padding-left: 180px;
+    line-height: 1.1;
+}
+
+.hero-left h2 {
+    color: #090909;
+    font-size: 26px;
+    font-weight: 600;
+}
+
+.hero-left p {
+    color: #171717;
+    font-size: 100px;
+    font-weight: 700;
+}
+
+.hero-hand-icon {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.hero-hand-icon img {
+    width: 105px;
+}
+
+.hero-latest-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    width: 310px;
+    height: 70px;
+    border-radius: 75px;
+    margin-top: 30px;
+    background: #ff4141;
+    color: white;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.hero-right {
+    margin-top: 100px;
+    padding-bottom: 100px;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Responsive styles for small screens (max-width: 768px) */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column; /* Stack hero content vertically */
+        height: auto; /* Adjust height to fit content */
+        padding: 20px; /* Add padding for better spacing */
+    }
+
+    .hero-left {
+        padding-left: 20px; /* Reduce padding */
+        text-align: center; /* Center align text */
+        gap: 15px; /* Reduce gap between elements */
+    }
+
+    .hero-left h2 {
+        font-size: 22px; /* Reduce font size */
+    }
+
+    .hero-left p {
+        font-size: 60px; /* Reduce font size */
+    }
+
+    .hero-hand-icon {
+        gap: 10px; /* Reduce gap between icons */
+    }
+
+    .hero-hand-icon img {
+        width: 80px; /* Reduce image size */
+    }
+
+    .hero-latest-btn {
+        width: 260px; /* Reduce button width */
+        height: 60px; /* Reduce button height */
+        font-size: 18px; /* Reduce font size */
+    }
+
+    .hero-right {
+        margin-top: 50px; /* Reduce margin */
+        padding-bottom: 50px; /* Reduce padding */
+    }
+}
+
+/* Further adjustments for very small screens (max-width: 480px) */
+@media (max-width: 480px) {
+    .hero-left {
+        padding-left: 10px; /* Further reduce padding */
+        padding-right: 10px; /* Add right padding for consistency */
+    }
+
+    .hero-left h2 {
+        font-size: 18px; /* Further reduce font size */
+    }
+
+    .hero-left p {
+        font-size: 40px; /* Further reduce font size */
+    }
+
+    .hero-hand-icon {
+        flex-direction: column; /* Stack icons vertically */
+        align-items: center; /* Center align icons */
+        gap: 10px; /* Further reduce gap */
+    }
+
+    .hero-hand-icon img {
+        width: 60px; /* Further reduce image size */
+    }
+
+    .hero-latest-btn {
+        width: 220px; /* Further reduce button width */
+        height: 50px; /* Further reduce button height */
+        font-size: 16px; /* Further reduce font size */
+    }
+
+    .hero-right {
+        margin-top: 30px; /* Further reduce margin */
+        padding-bottom: 30px; /* Further reduce padding */
+    }
+}

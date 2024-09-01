@@ -1,0 +1,70 @@
+/* Base styles for new collections */
+.new-collections {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.new-collections h1 {
+    color: #171717;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.new-collections hr {
+    width: 200px;
+    height: 16px;
+    border-radius: 10px;
+    background: #252525;
+}
+
+/* Grid layout for collections */
+.collections {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-top: 50px;
+    gap: 30px;
+}
+
+/* Responsive styles for small screens (max-width: 768px) */
+@media (max-width: 768px) {
+    .new-collections {
+        margin-bottom: 60px; /* Reduce margin for smaller screens */
+    }
+
+    .new-collections h1 {
+        font-size: 32px; /* Reduce font size for smaller screens */
+    }
+
+    .new-collections hr {
+        width: 150px; /* Reduce width for smaller screens */
+        height: 12px; /* Reduce height */
+    }
+
+    .collections {
+        grid-template-columns: 1fr 1fr 1fr; /* Adjust grid for 3 columns */
+        gap: 20px; /* Reduce gap between items */
+    }
+}
+
+/* Further adjustments for very small screens (max-width: 480px) */
+@media (max-width: 480px) {
+    .new-collections {
+        margin-bottom: 40px; /* Further reduce margin */
+    }
+
+    .new-collections h1 {
+        font-size: 24px; /* Further reduce font size */
+    }
+
+    .new-collections hr {
+        width: 120px; /* Further reduce width */
+        height: 10px; /* Further reduce height */
+    }
+
+    .collections {
+        grid-template-columns: 1fr 1fr; /* Adjust grid for 2 columns */
+        gap: 15px; /* Further reduce gap between items */
+    }
+}

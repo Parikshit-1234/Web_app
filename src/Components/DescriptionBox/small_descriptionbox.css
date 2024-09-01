@@ -1,0 +1,87 @@
+/* Base styles for description box */
+.descriptionbox {
+    margin: 120px 170px;
+}
+
+.descriptionbox-navigator {
+    display: flex;
+    flex-wrap: wrap; /* Ensure items wrap if there's not enough space */
+}
+
+.descriptionbox-nav-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: 600;
+    width: 171px;
+    height: 70px;
+    border: 1px solid #d0d0d0;
+    margin: 5px; /* Add margin for spacing between boxes */
+}
+
+.descriptionbox-nav-box.fade {
+    background: #FBFBFB;
+    color: #555;
+}
+
+.descriptionbox-description {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    border: 1px solid #D0D0D0;
+    padding: 48px;
+    padding-bottom: 70px;
+}
+
+/* Responsive styles for small screens (max-width: 768px) */
+@media (max-width: 768px) {
+    .descriptionbox {
+        margin: 60px 20px; /* Reduce margin for smaller screens */
+    }
+
+    .descriptionbox-navigator {
+        flex-direction: column; /* Stack navigation boxes vertically */
+        align-items: center; /* Center align navigation boxes */
+    }
+
+    .descriptionbox-nav-box {
+        font-size: 14px; /* Adjust font size */
+        width: 100%; /* Make boxes full width */
+        max-width: 300px; /* Limit max width */
+        height: auto; /* Allow height to adjust automatically */
+        padding: 10px; /* Adjust padding */
+        margin: 5px 0; /* Vertical margin for spacing */
+    }
+
+    .descriptionbox-description {
+        padding: 24px; /* Reduce padding */
+        padding-bottom: 40px; /* Adjust bottom padding */
+    }
+}
+
+/* Further adjustments for very small screens (max-width: 480px) */
+@media (max-width: 480px) {
+    .descriptionbox {
+        margin: 20px 10px; /* Further reduce margins */
+    }
+
+    .descriptionbox-navigator {
+        flex-direction: column; /* Stack navigation boxes vertically */
+        align-items: center; /* Center align navigation boxes */
+    }
+
+    .descriptionbox-nav-box {
+        font-size: 12px; /* Further reduce font size */
+        width: 100%; /* Make boxes full width */
+        max-width: 250px; /* Further limit max width */
+        height: auto; /* Allow height to adjust automatically */
+        padding: 8px; /* Further adjust padding */
+        margin: 5px 0; /* Vertical margin for spacing */
+    }
+
+    .descriptionbox-description {
+        padding: 16px; /* Further reduce padding */
+        padding-bottom: 30px; /* Adjust bottom padding */
+    }
+}

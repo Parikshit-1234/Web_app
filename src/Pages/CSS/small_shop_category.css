@@ -1,0 +1,94 @@
+/* Base styles for shop category page */
+.shopcategory-banner {
+    display: block;
+    margin: 30px auto;
+    width: 82%;
+}
+
+.shopcategory-indexSort {
+    display: flex;
+    margin: 0px 170px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.shopcategory-sort {
+    padding: 10px 20px;
+    border-radius: 40px;
+    border: 1px solid #888;
+}
+
+.shopcategory-indexSort p span {
+    font-weight: 600;
+}
+
+.shopcategory-products {
+    margin: 50px 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    row-gap: 80px;
+}
+
+.shopcategory-loadmore {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 150px auto;
+    width: 233px;
+    height: 69px;
+    border-radius: 75px;
+    background: plum;
+    color: #787878;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+/* Responsive styles for small screens (max-width: 768px) */
+@media (max-width: 768px) {
+    .shopcategory-banner {
+        width: 90%; /* Adjust banner width for smaller screens */
+    }
+
+    .shopcategory-indexSort {
+        flex-direction: column; /* Stack items vertically */
+        margin: 0 20px; /* Reduce margins */
+    }
+
+    .shopcategory-sort {
+        margin-bottom: 10px; /* Add spacing between sort options */
+    }
+
+    .shopcategory-products {
+        margin: 20px 10px; /* Adjust margins */
+        grid-template-columns: 1fr 1fr; /* Adjust grid layout to 2 columns */
+        row-gap: 40px; /* Reduce gap between rows */
+    }
+
+    .shopcategory-loadmore {
+        width: 200px; /* Adjust button width */
+        height: 60px; /* Adjust button height */
+        font-size: 16px; /* Adjust font size */
+    }
+}
+
+/* Additional adjustments for very small screens (max-width: 480px) */
+@media (max-width: 480px) {
+    .shopcategory-banner {
+        width: 95%; /* Further adjust banner width */
+    }
+
+    .shopcategory-indexSort {
+        margin: 0 10px; /* Further reduce margins */
+    }
+
+    .shopcategory-products {
+        grid-template-columns: 1fr; /* Single column layout */
+        row-gap: 30px; /* Further reduce gap */
+    }
+
+    .shopcategory-loadmore {
+        width: 180px; /* Further adjust button width */
+        height: 50px; /* Further adjust button height */
+        font-size: 14px; /* Further adjust font size */
+    }
+}

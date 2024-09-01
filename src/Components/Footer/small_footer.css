@@ -1,0 +1,131 @@
+/* Base styles for footer */
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 40px 0; /* Added padding for overall spacing */
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer-logo p {
+    color: #383838;
+    font-size: 46px;
+    font-weight: 700;
+}
+
+.footer-links {
+    display: flex;
+    list-style: none;
+    gap: 50px;
+    color: #252525;
+    font-size: 20px;
+}
+
+.footer-links li {
+    cursor: pointer;
+}
+
+.footer-social-icon {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-icons-container {
+    padding: 10px;
+    padding-bottom: 6px;
+    background: #fbfbfb;
+    border: 1px solid #ebebeb;
+}
+
+.footer-copyright {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+    margin-bottom: 30px;
+    color: #1a1a1a;
+    font-size: 20px;
+}
+
+.footer-copyright hr {
+    width: 80%;
+    border: none;
+    border-radius: 10px;
+    height: 3px;
+    background: #c7c7c7;
+}
+
+/* Responsive styles for small screens (max-width: 768px) */
+@media (max-width: 768px) {
+    .footer {
+        gap: 30px; /* Reduce gap for smaller screens */
+        padding: 20px; /* Adjust padding for smaller screens */
+    }
+
+    .footer-logo p {
+        font-size: 36px; /* Reduce font size for logo */
+    }
+
+    .footer-links {
+        flex-direction: column; /* Stack links vertically */
+        align-items: center; /* Center align links */
+        gap: 20px; /* Reduce gap between links */
+        font-size: 16px; /* Adjust font size */
+    }
+
+    .footer-social-icon {
+        gap: 15px; /* Reduce gap between social icons */
+    }
+
+    .footer-icons-container {
+        padding: 8px; /* Adjust padding */
+    }
+
+    .footer-copyright {
+        font-size: 18px; /* Reduce font size */
+    }
+
+    .footer-copyright hr {
+        width: 90%; /* Increase width for better fit */
+    }
+}
+
+/* Further adjustments for very small screens (max-width: 480px) */
+@media (max-width: 480px) {
+    .footer {
+        gap: 20px; /* Further reduce gap */
+        padding: 15px; /* Further adjust padding */
+    }
+
+    .footer-logo p {
+        font-size: 28px; /* Further reduce font size */
+    }
+
+    .footer-links {
+        font-size: 14px; /* Further reduce font size */
+    }
+
+    .footer-social-icon {
+        gap: 10px; /* Further reduce gap between icons */
+    }
+
+    .footer-icons-container {
+        padding: 6px; /* Further adjust padding */
+    }
+
+    .footer-copyright {
+        font-size: 16px; /* Further reduce font size */
+    }
+
+    .footer-copyright hr {
+        width: 100%; /* Full width */
+    }
+}

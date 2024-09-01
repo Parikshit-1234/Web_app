@@ -1,0 +1,33 @@
+/* Import Poppins from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+/* Base styles */
+* {
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+/* Styles for small screens */
+@media (max-width: 600px) {
+  body {
+    font-size: 14px; /* Adjust base font size for smaller screens */
+  }
+
+  code {
+    font-size: 0.9em; /* Reduce the font size of code elements */
+  }
+
+  /* If you have other elements that need adjustment, add them here */
+}
